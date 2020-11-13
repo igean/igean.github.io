@@ -1,4 +1,10 @@
 .social-media {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+.social-media {
     display: flex;
     flex-direction: column;
 
@@ -9,4 +15,5 @@
 
 .social-media img {
     margin-bottom: 10px;
+}
 }

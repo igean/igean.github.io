@@ -10,15 +10,13 @@ body {
 }
 
 .container {
-
     min-height: 100%;
-    padding: 5rem 10rem;
-    background: 80% 60%/700px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+    padding: 1rem 2rem;
+    background:  linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
 }
 
 main {
-    padding-top: 5rem;
-    min-height: 60vh;
+    min-height: 70vh;
     width: 100%;
 
     line-height: 2;
@@ -41,8 +39,30 @@ main h1 {
 
 main p {
     margin-top: 30px;
-    width: 300px;
+    width: 80%;
     line-height: 1;
     font-family: 'Rokkitt', serif;
     font-size: 1.2rem;
+}
+
+
+@media (min-width: 1024px) {
+
+    .container {
+        background: 80% 56%/500px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+        padding: 2rem 4rem;
+    }
+
+    main p {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1040px) {
+
+.container {
+    background: 80% 60%/700px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+    padding: 5rem 10rem;
+}
+
 }
