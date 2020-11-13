@@ -19,8 +19,6 @@ main {
     min-height: 70vh;
     width: 100%;
 
-    line-height: 2;
-
     display: flex;
     align-items: center;
 }
@@ -38,9 +36,6 @@ main h1 {
 }
 
 main p {
-    margin-top: 30px;
-    width: 80%;
-    line-height: 1;
     font-family: 'Rokkitt', serif;
     font-size: 1.2rem;
 }
@@ -49,12 +44,18 @@ main p {
 @media (min-width: 1024px) {
 
     .container {
-        background: 80% 56%/500px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+        background: 80% 50%/500px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
         padding: 2rem 4rem;
+    }
+
+    main {
+        min-height: 85vh;
+        line-height: 2;
     }
 
     main p {
         width: 300px;
+        line-height: 1;
     }
 }
 
@@ -63,6 +64,11 @@ main p {
 .container {
     background: 80% 60%/700px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
     padding: 5rem 10rem;
+}
+
+main p {
+    margin-top: 30px;
+    width: 80%;
 }
 
 }
