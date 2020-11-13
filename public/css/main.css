@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+
+    min-height: 100%;
+    padding: 5rem 10rem;
+    background: 80% 60%/700px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+}
+
+main {
+    padding-top: 5rem;
+    min-height: 60vh;
+    width: 100%;
+
+    line-height: 2;
+
+    display: flex;
+    align-items: center;
+}
+
+main strong {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #00FF66;
+}
+
+main h1 {
+    font-family: 'Rancho', cursive;
+    font-size: 4.1rem;
+}
+
+main p {
+    margin-top: 30px;
+    width: 300px;
+    line-height: 1;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.2rem;
+}
