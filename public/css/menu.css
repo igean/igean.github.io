@@ -1,12 +1,25 @@
-.menu {
+#menu-bars {
     position: absolute;
     top: 2rem;
-    right: 0;
+    right: 1rem;
+}
+
+.menu {
+    overflow: hidden;
+}
+
+.menu-list {
+    position: fixed;
+    top: 2rem;
+
+    transform: translateX(2000%);
+
+    overflow: hidden;
 }
 
 .menu-list li {
+    margin: 2rem 0;
     list-style: none;
-    margin: 10px;
 }
 
 .menu-list li a {
@@ -30,9 +43,23 @@
 
 @media (min-width: 768px) {
 
-.menu-list {
-    display: flex;
-    position: absolute;
-    right: 10rem;
-}
+    #menu-bars {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+    }
+
+    .menu-list {
+        display: flex;
+        right: 10rem;
+        transform: translateX(0);
+    }
+
+    .menu-list li {
+        margin: 10px;
+    }
 }
