@@ -68,17 +68,17 @@ main {
 @media (min-width: 1024px) {
 
     .container {
-        background: 80% 50%/500px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+        background: 90% 50%/clamp(500px,600px,900px) url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 100%);
         padding: 2rem 4rem;
     }
 
     main {
-        min-height: 70vh;
+        margin-top: 0;
         line-height: 2;
     }
 
     main p {
-        width: 300px;
+        width: clamp(300px,400px,500px);
         line-height: 1;
     }
 }
@@ -86,7 +86,7 @@ main {
 @media (min-width: 1440px) {
 
 .container {
-    background: 80% 50%/700px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+    background: 80% 50%/800px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
     padding: 5rem 10rem;
 }
 
