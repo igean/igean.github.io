@@ -16,12 +16,14 @@ body {
 
     min-height: 100%;
     padding: 1rem 2rem;
-    background:  linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
+    background: 50% 10%/500px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #8481a1 131.72%);
 }
 
 main {
+    margin-top: 12rem;
     min-height: 70vh;
     width: 100%;
+    line-height: 2;
 
     display: flex;
     align-items: center;
@@ -30,18 +32,20 @@ main {
 .info strong {
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1;
     color: #00FF66;
 }
 
 .info h1 {
     font-family: 'Rancho', cursive;
-    font-size: 4.1rem;
+    font-size: 3.5rem;
 }
 
 .info p {
     font-family: 'Rokkitt', serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1;
     margin-bottom: 20px;
 }
 
@@ -79,7 +83,7 @@ main {
     }
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 1440px) {
 
 .container {
     background: 80% 50%/700px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
