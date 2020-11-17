@@ -2,5 +2,10 @@ const menu_bars = document.querySelector('.fa-bars')
 
 menu_bars.addEventListener('click', () => {
 
-    document.querySelector('.menu-list').classList.add('.animation-menu-appear')
+    const menu = document.querySelector('.menu-list')
+    if (menu.classList.toString().includes('menu-hidden')) {
+        menu.classList.remove('menu-hidden')
+    }else {
+        menu.classList.add('menu-hidden')
+    }
 })

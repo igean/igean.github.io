@@ -1,20 +1,26 @@
 #menu-bars {
-    position: absolute;
+    position: fixed;
     top: 2rem;
     right: 1rem;
+    z-index: 10;
 }
 
-.menu {
-    overflow: hidden;
+.menu-list {
+    transition: .3s ease-in-out;
+}
+
+.menu-hidden {
+    transform: translateX(100%);
 }
 
 .menu-list {
     position: fixed;
-    top: 2rem;
-
-    transform: translateX(2000%);
-
-    overflow: hidden;
+    top: 0;
+    right: 0;
+    padding: 2rem 3rem 0;
+    background: #1e9750;
+    z-index: 5;
+    height: 100%;
 }
 
 .menu-list li {
@@ -56,6 +62,7 @@
     .menu-list {
         display: flex;
         right: 10rem;
+        background: none;
         transform: translateX(0);
     }
 
