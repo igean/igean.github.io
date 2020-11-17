@@ -15,18 +15,31 @@ body {
     justify-content: center;
 
     min-height: 100%;
-    padding: 1rem 2rem;
-    background: 50% 10%/500px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #8481a1 131.72%);
+    background: 50% 10%/600px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #8481a1 131.72%);
 }
 
 main {
     margin-top: 12rem;
     min-height: 70vh;
     width: 100%;
-    line-height: 2;
 
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.info {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .info strong {
@@ -37,21 +50,26 @@ main {
     color: #00FF66;
 }
 
-.info h1 {
+.info div h1 {
     font-family: 'Rancho', cursive;
     font-size: 3.5rem;
+    line-height: 1.7;
 }
 
-.info p {
+.info div p {
     font-family: 'Rokkitt', serif;
     font-size: 1.1rem;
-    line-height: 1;
     margin-bottom: 20px;
+    line-height: 1;
 }
 
-.info a {
+.info div a {
     text-decoration: none;
     padding: .5rem 1.2rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: #00C54F;
     border-radius: 5px;
@@ -61,15 +79,14 @@ main {
     transition: .2s;
 }
 
-.info a:hover {
+.info div a:hover {
     background: #02dd59;
 }
 
 @media (min-width: 1024px) {
 
     .container {
-        background: 90% 50%/clamp(500px,600px,900px) url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 100%);
-        padding: 2rem 4rem;
+        background: 80% 50%/clamp(30rem,600px,50rem) url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 100%);
     }
 
     main {
@@ -77,22 +94,18 @@ main {
         line-height: 2;
     }
 
-    main p {
-        width: clamp(300px,400px,500px);
-        line-height: 1;
+    .info div strong {
+        font-size: 1.5rem;
+        width: 15rem;
     }
-}
 
-@media (min-width: 1440px) {
+    .info div h1 {
+        font-size: 5rem;
+    }
 
-.container {
-    background: 80% 50%/800px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #3F3D56 131.72%);
-    padding: 5rem 10rem;
-}
-
-main p {
-    margin-top: 30px;
-    width: 300px;
-}
-
+    .info div p {
+        font-size: 1.2rem;
+        width: 40%;
+        margin-top: 5rem;
+    }
 }
