@@ -15,7 +15,7 @@ body {
     justify-content: center;
 
     min-height: 100%;
-    background: 50% 10%/600px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #8481a1 131.72%);
+    background: 50% 10%/500px url("/public/images/bg-main.svg") no-repeat, linear-gradient(163.97deg, #0D1717 53.92%, #8481a1 131.72%);
 }
 
 main {
@@ -30,10 +30,10 @@ main {
 
 .info {
     width: 80%;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .info div {
